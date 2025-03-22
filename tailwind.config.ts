@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				laundry: {
+					50: '#F0F7FF',
+					100: '#E0EFFF',
+					200: '#B8DBFF',
+					300: '#8CC7FF',
+					400: '#5AB3FF',
+					500: '#2A9FFF',
+					600: '#0085FF',
+					700: '#0071E6',
+					800: '#005DB8',
+					900: '#004A8C',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +87,46 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				fadeInUp: {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				fadeInDown: {
+					'0%': { opacity: '0', transform: 'translateY(-20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				fadeInLeft: {
+					'0%': { opacity: '0', transform: 'translateX(-20px)' },
+					'100%': { opacity: '1', transform: 'translateX(0)' }
+				},
+				fadeInRight: {
+					'0%': { opacity: '0', transform: 'translateX(20px)' },
+					'100%': { opacity: '1', transform: 'translateX(0)' }
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				pulse: {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fadeIn': 'fadeIn 0.5s ease-out forwards',
+				'fadeInUp': 'fadeInUp 0.5s ease-out forwards',
+				'fadeInDown': 'fadeInDown 0.5s ease-out forwards',
+				'fadeInLeft': 'fadeInLeft 0.5s ease-out forwards',
+				'fadeInRight': 'fadeInRight 0.5s ease-out forwards',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse': 'pulse 3s ease-in-out infinite'
 			}
 		}
 	},

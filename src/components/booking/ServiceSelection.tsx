@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Check, Shirt, Droplet, Shirt2, PanelTop } from 'lucide-react';
+import { Check, Shirt, Droplet, PanelTop } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -25,7 +25,7 @@ const services = [
     id: 'ironing',
     title: 'Ironing Service',
     description: 'Professional pressing for wrinkle-free clothes',
-    icon: Shirt2,
+    icon: Shirt,
     color: 'green',
     basePrice: '$2.50/item'
   },

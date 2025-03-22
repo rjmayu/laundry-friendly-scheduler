@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Check, Shirt, Droplet, Iron, PanelTop, CalendarDays } from 'lucide-react';
+import { Check, Shirt, Droplet, Shirt2, PanelTop, CalendarDays } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -36,7 +36,7 @@ const services = [
     id: 'ironing',
     title: 'Ironing Service',
     description: 'Crisp, wrinkle-free garments delivered ready to wear.',
-    icon: Iron,
+    icon: Shirt2,
     color: 'bg-green-50 text-green-600',
     features: [
       'Hand-finished pressing',
